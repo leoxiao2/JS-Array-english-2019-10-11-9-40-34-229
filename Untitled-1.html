@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML EXAM</title>
+</head>
+<body>
+  <script>
+    // var a = '[a, b, c, d]';
+    // var b = [1, 2, 3, 4];
+    // console.log(typeof(b))
+    // var a = [1, 2, 3, 4, 5];
+    // for(var i=0;i<a.length;i++){
+    //     a[i]=a[i]*2
+    // }
+    // console.log(a)
+    // var colors = ["Red", "Green", "White", "Black"];
+    // var reult="";
+    // switch (expression) {
+    // case 1:
+    //     for(var i=0;i<colors.length;i++){
+    //     result+=colors[i]+" ";
+    //     }
+    //     break;
+    // case 2:
+    // for(var i=0;i<colors.length;i++){
+    //     result+=colors[i]+"+";
+    //     }
+    //     break;
+    // case 3:
+    // for(var i=0;i<colors.length;i++){
+    //     result+=colors[i]+"";
+    //     }
+    //     break;
+    // default:
+    //     console.log('null')
+    // }
+    // return result
+    // var a = [5, 1, 8, 10, 4];
+    // a.sort((a, b) => {
+    //   return b-a // 降序
+    // })
+    // console.log(a)
+    var arr = [3, 'a', 'a', 'a', 2, 3, 'a', 3, 'a', 2, 4, 9, 3];
+    let res = {};
+    let maxName, maxNum = 0
+    // 遍历数组
+    arr.forEach((item) => {
+        res[item] ? res[item] += 1 : res[item] = 1
+        if (res[item] > maxNum) {
+        maxName = item
+        maxNum = res[item]
+    }
+    })
+    console.log(maxName);
+  </script>  
+  </body>
+</html>
